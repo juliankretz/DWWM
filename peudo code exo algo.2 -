@@ -1,5 +1,6 @@
 - 3.2 -
 
+
 Déclaration
 
 String : mdp
@@ -26,6 +27,7 @@ Si (tentative = 3) {
 
 - 3.6 -
 
+
 Déclaration
 
 Int random
@@ -41,21 +43,24 @@ Traitement
 
 Do {
     Lire : input
-    Si (input = mdp) {
+    Si (input = random) {
         Écrire : Vous avez trouvé le nombre en +tentative tentative(s) }
-    Sinon Si (input > mdp) {
-        Écrire : Incorrect. Indice : votre nombre est plus grand que l'aléatoire }
-    Sinon (input < mdp) {
-        Écrire : Incorrect. Indice : votre nombre est plus petit que l'aléatoire }    
-} While
+    Sinon Si (input > random) {
+        Écrire : Incorrect. Indice : votre nombre est plus grand que l'aléatoire
+        tentative ++ }
+    Sinon {
+        Écrire : Incorrect. Indice : votre nombre est plus petit que l'aléatoire
+        tentative ++ }    
+} While (input != random)
 
 
 - 3.7 -
 
+
 Déclaration
 
 Int somme
-Int magasin = 1s
+Int magasin = 1
 
 Saisie
 
@@ -70,3 +75,8 @@ Do {
 } While (somme =< 2)
 
 Écrire : Barnabé est passé dans +magasin magasin(s)
+
+
+- 4.1 -
+
+
