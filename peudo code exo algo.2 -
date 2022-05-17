@@ -72,11 +72,29 @@ Traitement
 Do {
     ((somme /2) somme --)
     magasin ++
-} While (somme =< 2)
+} While (somme <= 2)
 
 Écrire : Barnabé est passé dans +magasin magasin(s)
 
 
 - 4.1 -
 
+
+Déclaration
+
+Int nbruser
+
+
+
+Saisie
+
+Écrire : Entrez les nombres à trier
+Lire : nbruser
+
+Traitement
+
+Pour (int i=0; i<tab.lenght; i++)
+
+Si nbruser = tab[i] {
+ }
 
