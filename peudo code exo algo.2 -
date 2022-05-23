@@ -82,9 +82,9 @@ Do {
 
 Déclaration
 
-Int nbruser
-
-
+String result "non trouvé"
+int userinput
+int tab {8, 16, 32, 64, 128, 256, 512}
 
 Saisie
 
@@ -96,5 +96,7 @@ Traitement
 Pour (int i=0; i<tab.lenght; i++)
 
 Si nbruser = tab[i] {
+    result = trouvé
+    Écrire : result
  }
 

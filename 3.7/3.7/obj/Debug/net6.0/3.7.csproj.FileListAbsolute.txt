@@ -1,0 +1,15 @@
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\bin\Debug\net6.0\3.7.exe
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\bin\Debug\net6.0\3.7.deps.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\bin\Debug\net6.0\3.7.runtimeconfig.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\bin\Debug\net6.0\3.7.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\bin\Debug\net6.0\3.7.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.csproj.AssemblyReference.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.AssemblyInfoInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.AssemblyInfo.cs
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.csproj.CoreCompileInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\refint\3.7.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\3.7.genruntimeconfig.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\3.7\3.7\obj\Debug\net6.0\ref\3.7.dll
