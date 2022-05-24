@@ -12,7 +12,7 @@ namespace exo
             Random rnd = new Random();
             int input;
             int tries = 1;
-            int random = rnd.Next(0, 100);
+            int random = rnd.Next(0, 100);  
             int min = 0;
             int max = 100;
 
