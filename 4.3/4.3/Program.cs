@@ -12,6 +12,6 @@ for (int i = 0; i < input.Length; i++)
         if (input[i] == amount)
        
         amount++;
-        Console.WriteLine("La lettre "++" est apparue "+amount+" fois.");
+        Console.WriteLine("La lettre "+tab+" est apparue "+amount+" fois.");
     }
 }
