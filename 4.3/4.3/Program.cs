@@ -1,23 +1,36 @@
 ﻿String input;
-int length = 120;
-
-int amount = 0;
+int inputLength = 10;
+int[] amount = new int[26];
 char[] tab = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-Console.WriteLine("Entrez un texte d'au moins 120 caractères");
-input = Console.ReadLine();
-if  (input length)
+Console.WriteLine("Entrez un texte d'au moins "+inputLength+" caractères");
+do
 {
-    Console.WriteLine("Veuillez entrez un texte d'au moins 120 caractères");
+    input = Console.ReadLine();
+    input = input.Replace("é", "e").Replace("è", "e");
+    if (input.Length < inputLength)
+    {
+        Console.WriteLine("Veuillez entrez un texte d'au moins "+inputLength+" caractères");
+    }
+} while (input.Length < inputLength);
+
+char [] inputChar = input.ToCharArray();
+
+for (int i = 0; i < inputChar.Length; i++)
+{
+    for (int j = 0; j < tab.Length; j++)
+    {
+        if (inputChar[i] == tab[j])
+        { 
+            amount[j]++;
+        }
+    }
 }
 
-for (int i = 0; i < input.Length; i++)
+for (int i = 0; i < amount.Length; i++)
 {
-    for (int j = 0; j < amount; j++) 
+    if (amount[i] > 0)
     {
-        if (input[i] == amount)
-       
-        amount++;
-        Console.WriteLine("La lettre "+j+" est apparue "+amount+" fois.");
+        Console.WriteLine("La lettre " + inputChar + " est présente " + amount + " fois");
     }
 }

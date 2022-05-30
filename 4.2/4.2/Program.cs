@@ -2,7 +2,7 @@
 char letter = ' ';
 int amount =0;
 
-Console.WriteLine("Entrez la phrase");
+Console.WriteLine("Entrez une phrase");
 input = Console.ReadLine();
 
 Console.WriteLine("Entrez la lettre à chercher");
