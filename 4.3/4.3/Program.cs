@@ -31,6 +31,6 @@ for (int i = 0; i < amount.Length; i++)
 {
     if (amount[i] > 0)
     {
-        Console.WriteLine("La lettre " + inputChar[i] + " est présente " + amount[i] + " fois");
+        Console.WriteLine("La lettre " + tab[i] + " est présente " + amount[i] + " fois");
     }
 }
