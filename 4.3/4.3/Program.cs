@@ -1,7 +1,7 @@
 ﻿String input;
 int inputLength = 10;
 int[] amount = new int[26];
-char[] tab = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+char[] tab = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
 Console.WriteLine("Entrez un texte d'au moins "+inputLength+" caractères");
 do
@@ -31,6 +31,6 @@ for (int i = 0; i < amount.Length; i++)
 {
     if (amount[i] > 0)
     {
-        Console.WriteLine("La lettre " + inputChar + " est présente " + amount + " fois");
+        Console.WriteLine("La lettre " + inputChar[i] + " est présente " + amount[i] + " fois");
     }
 }
