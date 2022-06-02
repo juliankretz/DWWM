@@ -2,6 +2,7 @@
 
 for (int j = 0; j < tab.Length; j++)
 {
+
     int a = j;
     for (int i = j; i < tab.Length; i++)
     {
@@ -14,6 +15,6 @@ for (int j = 0; j < tab.Length; j++)
     int p = tab[a];
     tab[a] = tab[j];
     tab[j] = p;
-  
 }
-Console.WriteLine();
+
+Console.WriteLine(tab);
