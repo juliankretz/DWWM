@@ -17,7 +17,7 @@ do
 
 if (tentative == 0)
 {
-    Console.WriteLine("L'authentification échoué. Votre compte est désormais bloqué.");
+    Console.WriteLine("L'authentification a échoué. Votre compte est désormais bloqué.");
 }
 else
 {
