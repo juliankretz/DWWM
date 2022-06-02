@@ -17,4 +17,7 @@ for (int j = 0; j < tab.Length; j++)
     tab[j] = p;
 }
 
-Console.WriteLine(tab);
+for (int i = 0; i < tab.Length; i++)
+{
+    Console.WriteLine(tab[i]);
+}
