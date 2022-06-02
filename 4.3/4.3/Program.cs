@@ -4,6 +4,7 @@ int[] amount = new int[26];
 char[] tab = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
 Console.WriteLine("Entrez un texte d'au moins "+inputLength+" caractères");
+
 do
 {
     input = Console.ReadLine();

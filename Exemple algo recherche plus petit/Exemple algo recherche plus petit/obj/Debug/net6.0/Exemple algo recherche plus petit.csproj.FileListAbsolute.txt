@@ -1,0 +1,15 @@
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\bin\Debug\net6.0\Exemple algo recherche plus petit.exe
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\bin\Debug\net6.0\Exemple algo recherche plus petit.deps.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\bin\Debug\net6.0\Exemple algo recherche plus petit.runtimeconfig.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\bin\Debug\net6.0\Exemple algo recherche plus petit.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\bin\Debug\net6.0\Exemple algo recherche plus petit.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.csproj.AssemblyReference.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.AssemblyInfoInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.AssemblyInfo.cs
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.csproj.CoreCompileInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\refint\Exemple algo recherche plus petit.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\Exemple algo recherche plus petit.genruntimeconfig.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Exemple algo recherche plus petit\Exemple algo recherche plus petit\obj\Debug\net6.0\ref\Exemple algo recherche plus petit.dll
