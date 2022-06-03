@@ -2,7 +2,7 @@
 int input;
 int[] tab = new int[] { 8, 16, 32, 64, 128, 256, 251, };
 
-Console.WriteLine("Entrez le nombre à trouver");
+Console.WriteLine("Entrez un nomnbre");
 input = int.Parse(Console.ReadLine());
 
 for (int i = 0; i < tab.Length; i++)
