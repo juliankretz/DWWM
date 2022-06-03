@@ -1,20 +1,20 @@
 ﻿int[] tab = { 128, 64, 8, 512, 16, 32, 256 };
 
-for (int j = 0; j < tab.Length; j++)
+for (int i = 0; i < tab.Length; i++)
 {
 
-    int a = j;
-    for (int i = j; i < tab.Length; i++)
+    int a = i;
+    for (int j = i; j < tab.Length; j++)
     {
-        if (tab[i] < tab[a])
+        if (tab[j] < tab[a])
         {
-            a = i;
+            a = j;
         }
     }
 
     int p = tab[a];
-    tab[a] = tab[j];
-    tab[j] = p;
+    tab[a] = tab[i];
+    tab[i] = p;
 }
 
 for (int i = 0; i < tab.Length; i++)
