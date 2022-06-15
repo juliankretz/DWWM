@@ -2,14 +2,14 @@
 String input;
 bool palindrome = true;
 
-Console.WriteLine("Veuillez saisir une chaine de caractéres se termiant par un point");
+Console.WriteLine("Veuillez saisir une chaine de caractères se termiant par un point");
 
 do
 {
     input = Console.ReadLine().Trim();
     if (input.ElementAt(input.Length - 1) != '.')
     {
-        Console.WriteLine("Veuillez saisir une chaine de caractéres se termiant par un point");
+        Console.WriteLine("Veuillez saisir une chaine de caractères se termiant par un point");
 
     }
 
