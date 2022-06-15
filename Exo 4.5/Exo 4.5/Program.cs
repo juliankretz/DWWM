@@ -1,5 +1,5 @@
 ﻿Console.Title = "Palindrome";
-String input;
+string input;
 bool palindrome = true;
 
 Console.WriteLine("Veuillez saisir une chaine de caractères se termiant par un point");
@@ -7,15 +7,13 @@ Console.WriteLine("Veuillez saisir une chaine de caractères se termiant par un 
 do
 {
     input = Console.ReadLine().Trim();
-    if (input.ElementAt(input.Length - 1) != '.')
+    if (input[input.Length - 1] != '.')
     {
         Console.WriteLine("Veuillez saisir une chaine de caractères se termiant par un point");
 
     }
 
-} while (input.ElementAt(input.Length - 1) != '.');
-
-string blocDePhrase = input.Substring(0, input.Length - 1).ToLower().Replace(" ", "");
+} while (input[input.Length - 1] != '.');
 
 string bloc = input.Substring(0, input.Length - 1).ToLower().Replace(" ", "");
 
