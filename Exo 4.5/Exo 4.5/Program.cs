@@ -1,36 +1,37 @@
-﻿String input;
-bool palindrome;
-Console.WriteLine("Entrez une chaîne de caractères");
-input = Console.ReadLine();
+﻿Console.Title = "Palindrome";
+String input;
+bool palindrome = true;
 
-char[] inputChar = input.ToCharArray();
+Console.WriteLine("Veuillez saisir une chaine de caractéres se termiant par un point");
 
-for (int i = 0; i < input.Length; i++)
+do
 {
-    for (int j = 1; j < input.Length; j--)
-        {
-            if (inputChar[i] == j)
-            {
-                palindrome = true;
-            }
-            else
-            {
-                palindrome = false;
-            }
-        }
+    input = Console.ReadLine().Trim();
+    if (input.ElementAt(input.Length - 1) != '.')
+    {
+        Console.WriteLine("Veuillez saisir une chaine de caractéres se termiant par un point");
+
+    }
+
+} while (input.ElementAt(input.Length - 1) != '.');
+
+string blocDePhrase = input.Substring(0, input.Length - 1).ToLower().Replace(" ", "");
+
+string bloc = input.Substring(0, input.Length - 1).ToLower().Replace(" ", "");
+
+int j = bloc.Length;
+
+for (int i = 0; i < j; i++)
+{
+    j--;
+    if (bloc[i] != bloc[j])
+    {
+        palindrome = false;
+        Console.WriteLine("La saisie n'est pas un palindrome");
+        break;
+    }
 }
-
-
-
-if (palindrome = true)
+if (palindrome)
 {
-    Console.WriteLine("La chaîne de caractères est un palindrome");
-}
-else if (palindrome = false)
-{
-    Console.WriteLine("La chaîne de caractères n'est pas un palindrome");
-}
-else
-{
-    Console.WriteLine("La chaîne de caractères est vide");
+    Console.WriteLine("La saisie est un palindrome");
 }
