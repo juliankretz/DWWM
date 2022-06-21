@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\Jeu du pendu.csproj": {}
+    "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\Jeu du pendu.csproj": {
+    "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\Jeu du pendu.csproj",
-        "projectName": "Jeu du pendu",
-        "projectPath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\Jeu du pendu.csproj",
+        "projectUniqueName": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj",
+        "projectName": "jeu_pendu_fontions",
+        "projectPath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj",
         "packagesPath": "C:\\Users\\Jkretz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\obj\\",
+        "outputPath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -52,24 +52,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

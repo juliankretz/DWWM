@@ -1,0 +1,5 @@
+C:\Users\Jkretz\Documents\GitHub\DWWM\Jeu du pendu\Jeu du pendu\obj\Debug\net5.0\Jeu du pendu.csproj.AssemblyReference.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Jeu du pendu\Jeu du pendu\obj\Debug\net5.0\Jeu du pendu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jkretz\Documents\GitHub\DWWM\Jeu du pendu\Jeu du pendu\obj\Debug\net5.0\Jeu du pendu.AssemblyInfoInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Jeu du pendu\Jeu du pendu\obj\Debug\net5.0\Jeu du pendu.AssemblyInfo.cs
+C:\Users\Jkretz\Documents\GitHub\DWWM\Jeu du pendu\Jeu du pendu\obj\Debug\net5.0\Jeu du pendu.csproj.CoreCompileInputs.cache

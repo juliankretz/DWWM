@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nERj4Wjh/y7OXio/f8lLL7/a+ZrkYHLbhsbh7qNXWczZ2RP8WnVJj12OatwYmx15n9ldZBmfUY/ZH3/Vnj6R0Q==",
+  "dgSpecHash": "WCpGtn5LBYtYMyS/ThIonkndhHLtk0D5Z5jizRIr9EVFrEjTi08uAKUSpVMvIJeFuIHrUSd+D1V94agy3OQ+hQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\Jeu du pendu\\Jeu du pendu.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jkretz\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\Jkretz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Jkretz\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Jkretz\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
