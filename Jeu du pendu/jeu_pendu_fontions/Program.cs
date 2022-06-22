@@ -37,8 +37,7 @@ namespace jeu_pendu_fontions
             int tries = 5;
 
             Console.WriteLine("JOUEUR 2 : Devinez le mot du JOUEUR 1 en entrant un caractère à la fois");
-            Console.WriteLine("Vous avez droit à " + tries + " fautes");
-            
+             
             do
             {
                 match = false;
