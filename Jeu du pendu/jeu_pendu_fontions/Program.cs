@@ -38,7 +38,7 @@ namespace jeu_pendu_fontions
 
             Console.WriteLine("JOUEUR 2 : Devinez le mot du JOUEUR 1 en entrant un caractère à la fois");
             Console.WriteLine("Vous avez droit à " + tries + " fautes");
-
+            
             do
             {
                 match = false;
@@ -50,7 +50,7 @@ namespace jeu_pendu_fontions
                 Console.WriteLine("Vous avez encore droit à " + tries + " fautes");
 
                 char lettre = char.Parse(Console.ReadLine());
-
+                //  lettre = lettre.Replace("é", "e").Replace("è", "e").Replace("ê", "e");
                 for (int i = 1; i < motPendu.Length - 1; i++)
                 {
                     if (motPendu[i].Equals(lettre))
@@ -76,7 +76,6 @@ namespace jeu_pendu_fontions
                     Console.WriteLine("La lettre " + lettre + " n'est pas présente dans le mot du JOUEUR 1");
                     tries--;
                 }
-
             } while (tries >= 0 && found == false);
 
             if (tries > 0)
@@ -85,7 +84,7 @@ namespace jeu_pendu_fontions
                 {
                     Console.Write(c + " ");
                 }
-                Console.WriteLine("Bravo vous avez trouvé le mot en " + (6 - tries) + " essais infructueux");
+                Console.WriteLine("Bravo vous avez trouvé le mot");
             }
             else
             {
