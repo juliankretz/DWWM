@@ -1,0 +1,16 @@
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.exe
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.deps.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.runtimeconfig.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.runtimeconfig.dev.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\bin\Debug\net5.0\Compte_bancaire.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.csproj.AssemblyReference.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.AssemblyInfoInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.AssemblyInfo.cs
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.csproj.CoreCompileInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\refint\Compte_bancaire.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\Compte_bancaire.genruntimeconfig.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\Compte_bancaire\obj\Debug\net5.0\ref\Compte_bancaire.dll
