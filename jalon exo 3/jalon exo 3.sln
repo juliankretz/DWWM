@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jalon exo 3", "jalon exo 3.csproj", "{363EF8A0-B700-4A91-B171-DB00DC8BCCB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{363EF8A0-B700-4A91-B171-DB00DC8BCCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363EF8A0-B700-4A91-B171-DB00DC8BCCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363EF8A0-B700-4A91-B171-DB00DC8BCCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363EF8A0-B700-4A91-B171-DB00DC8BCCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B104840-20AD-47DD-BE92-D08580CD1662}
+	EndGlobalSection
+EndGlobal

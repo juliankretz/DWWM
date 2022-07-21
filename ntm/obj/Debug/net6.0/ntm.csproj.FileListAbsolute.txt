@@ -1,0 +1,15 @@
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\bin\Debug\net6.0\ntm.exe
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\bin\Debug\net6.0\ntm.deps.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\bin\Debug\net6.0\ntm.runtimeconfig.json
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\bin\Debug\net6.0\ntm.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\bin\Debug\net6.0\ntm.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.csproj.AssemblyReference.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.AssemblyInfoInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.AssemblyInfo.cs
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.csproj.CoreCompileInputs.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\refint\ntm.dll
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.pdb
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ntm.genruntimeconfig.cache
+C:\Users\Jkretz\Documents\GitHub\DWWM\ntm\obj\Debug\net6.0\ref\ntm.dll
