@@ -1,25 +1,15 @@
 <?php
 
-function direBonjour(): void
-{
-    echo "<h1>Bonjour</h1>";
-}
+/**  
+* DATA Source Name (connectionString)
+* - host = adresse du serveur de base de données
+* - port = port (si ce n'est pas le port par défaut)
+* - dname = nom de la base de données
+* - charset = jeu de caractères
+*/
 
-function DireBonjourAQui(string $nom) : string
-{
-    return "<p>Bonjour $nom</p>";
-}
+$dsn = 'mysql:host=localhost;port=3306;dbname=db_users;charset=utf8mb4';
 
-direBonjour();
-direBonjour();
+$connexion = new PDO($dsn, 'jkretz', '1234');
 
-echo DireBonjourAQui('Toto');
 
-$bonjour = DireBonjourAQui('Titi');
-echo $bonjour;
-
-$nom = "Julian";
-
-echo '<p>Bonjour ' . $nom . '</p>';
-
-require 'footer.php';
