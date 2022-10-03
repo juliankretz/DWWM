@@ -1,0 +1,14 @@
+{
+    "name": "jkretz/user",
+    "description": "Application de gestion d'utilisateurs super top sa mère",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jkretz",
+            "email": "juliankretz03@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
