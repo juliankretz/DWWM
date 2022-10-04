@@ -12,6 +12,8 @@
 
 $connexion = new PDO($dsn, 'jkretz', '1234'); */
 
+require '../vendor/autoload.php';
+
 echo '<pre>' .var_export($_GET, true). '</pre>';
 
 // si le paramètre 'page' dans l'url n'est pas vide
@@ -27,12 +29,11 @@ switch($page)
     case 'profile';
         //charger ici le fichier profile.php
         require '../controller/ProfileController.php';
-        $controller = new ProfileConstroller();
+        $controller = new \user\controller\ProfileController();
         $controller->index();
     break;
     case 'groups';
-        require '../controller/GroupController.php';
-        $controller = new GroupController();
+        $controller = new \user\controller\GroupController();
         $controller->index();
     break;
     default:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Users\Controller;
+namespace user\controller;
 
 class GroupController
 {
