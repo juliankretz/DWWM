@@ -5,10 +5,15 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jkretz",
+            "name": "jkretz",
             "email": "juliankretz03@gmail.com"
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Users\\" : ""
+        }
+    }
 }
