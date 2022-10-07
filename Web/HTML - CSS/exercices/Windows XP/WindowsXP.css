@@ -1,0 +1,65 @@
+h1
+{
+    text-align: justify;
+    background-color:#2098dd;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em
+}
+
+hr
+{
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2
+{
+    text-align: justify;
+    background-color:#78bde6;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+body 
+{
+    background-color:#9ecce7;
+}
+
+.img2 
+{
+    float:right;
+    width: 6.5cm;
+    border-radius: 5px;
+}
+
+caption
+{
+    border: 1px solid white;
+    background-color: white;
+    table-layout: fixed; width: 500px;
+    table-layout: fixed; height: 20px;
+}
+
+table
+{
+    
+    border-collapse: collapse;
+    table-layout: fixed; width: 500px;
+    table-layout: fixed; height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td 
+{
+    border: 1px solid white;
+}
+
