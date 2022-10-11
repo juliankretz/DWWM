@@ -1,0 +1,60 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: #CCDDFF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+main
+{
+    background-color: lightgreen;
+    height: 549px;
+    width: 70%;
+    padding: 1px;
+}
+
+.aside1
+{
+    background-color: #FFDDCC;
+    height: 549px;
+    width: 15%;
+    padding: 1px;
+    gap: 5px;
+}
+
+li
+{
+    background-color: white;
+    width: 210px;
+    
+}
+
+.aside2
+{
+    background-color: #FFDDCC;
+    height: 549px;
+    width: 15%;
+    padding: 1px;
+}
+
+div
+{
+    display: flex;
+}
+
+footer
+{
+    background-color: #CCDDFF;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
