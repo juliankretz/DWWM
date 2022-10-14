@@ -54,7 +54,6 @@ main
     color: white;
     justify-content: center;
     padding-top: 10px;
-
 }
 
 .mainsect
@@ -77,8 +76,8 @@ h1
 
 h2
 {
-    background-color: #6b225e;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 10px;
 }
 
@@ -86,10 +85,17 @@ p
 {
     background-color: #843175;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 0;
     text-align: justify;
     font-size: larger;
-    display: flex;
+
+}
+
+p img
+{
+    height: 200px;
+    float: right;
+    margin-right: 0;
 }
 
 footer
