@@ -1,3 +1,8 @@
+body
+{
+    
+}
+
 * 
 {
     box-sizing: border-box;
@@ -12,28 +17,49 @@ header
     padding: 10px;
 }
 
-
 main
 {
-    background-color: lightgreen;
+    background-color: #bceeb2;
     height: 549px;
     width: 70%;
-    padding: 1px;
+    padding: 30px;
 }
 
+main ul
+{   
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+}   
+
+main li
+{   
+    background-color: white;
+    height: 2.5em;
+    display:table;
+    width: 20em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}   
+
 .aside1
-{
+{   
     background-color: #FFDDCC;
     height: 549px;
     width: 15%;
     padding: 1px;
     gap: 5px;
-}
+}   
 
-li
-{
+.aside1 li
+{   
     background-color: white;
-    width: 210px;
+    height: 2.5em;
+    display:table;
+    width: 15em;
+    margin-bottom: 1em;
     
 }
 
@@ -44,6 +70,7 @@ li
     width: 15%;
     padding: 1px;
 }
+
 
 div
 {

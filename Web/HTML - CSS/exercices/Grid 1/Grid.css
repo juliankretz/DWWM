@@ -1,0 +1,65 @@
+header
+{
+    background-color: #BBCCFF;
+    height: 1em;
+    width: 85%;
+    padding: 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    
+}
+
+.asd1
+{
+    background-color: #BBCCFF;
+    height: 1em;
+    width: 10%;
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    
+} 
+
+main
+{
+    background-color: #BBCCFF;
+
+}
+
+main table
+{
+    background-color: white;
+    margin: 5em;
+    gap: 0.5em;
+    border: 1px solid #BBCCFF;
+    border: collapse;
+}
+
+main td
+{
+    gap: 0.5em;
+    border: 1px solid #BBCCFF;
+    border: collapse;
+}
+
+
+footer
+{
+    background-color: #BBCCFF;
+    height: 1em;
+    width: 70%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding: 1em;
+
+}
+
+.asd2
+{
+    background-color: #BBCCFF;
+    height: 100%;
+    width: 30%;
+    padding: 1em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
