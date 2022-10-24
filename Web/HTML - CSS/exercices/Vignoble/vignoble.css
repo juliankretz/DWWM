@@ -1,0 +1,35 @@
+
+
+font-face
+{
+    font-family: 'channelwebfont';
+    src: url("./fonts/channel-webfont.eot") format('eot');
+    src: url("./fonts/channel-webfont.svg") format('svg');
+    src: url("./fonts/channel-webfont.ttf") format('ttf');
+    src: url("./fonts/channel-webfont.woff") format('woff');
+}
+
+body
+{
+    background-color: black;
+    font-family: 'Freehand';
+    font-size: 1em;
+}
+
+header nav
+{
+    font-family: 'channelwebfont', sans-serif;
+    font-size: 2em;
+}
+
+header li
+{
+    color: white;
+
+}
+
+
+main
+{
+    
+}

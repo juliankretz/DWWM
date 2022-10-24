@@ -12,7 +12,7 @@ header
 .asd1
 {
     background-color: #BBCCFF;
-    height: 1em;
+    height: 100%;
     width: 10%;
     padding: 1em;
     margin-left: 0.5em;
@@ -23,23 +23,22 @@ header
 main
 {
     background-color: #BBCCFF;
-
+    
 }
 
 main table
 {
     background-color: white;
     margin: 5em;
-    gap: 0.5em;
     border: 1px solid #BBCCFF;
     border: collapse;
 }
 
 main td
 {
-    gap: 0.5em;
+    
     border: 1px solid #BBCCFF;
-    border: collapse;
+    
 }
 
 
