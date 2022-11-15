@@ -2,7 +2,8 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>test</title>
+        <title>Afficher l'heure & la date</title>
+        <link rel="stylesheet" href="./afficherheure.css"/>
     </head>
 
     <body>
@@ -29,14 +30,12 @@
                 let mois= maDate.getMonth()+1;
                 let annee= maDate.getFullYear();
                 //  if (jmois<10) {
-
-                //     jmois="0"+jmois;}
-                    jmois=(jmois<10)? "0"+jmois : jmois;
-                    mois= (mois<10)?"0"+mois :mois;
-                    let datejour=jmois+'/'+mois+ '/'+ annee;
-                return datejour;  
+                //  jmois="0"+jmois;}
+                jmois=(jmois<10)? "0"+jmois : jmois;
+                mois= (mois<10)?"0"+mois :mois;
+                let datejour=jmois+'/'+mois+ '/'+ annee;
+                return datejour;
             }
-
 
             var monbtndate=document.querySelector("#btndate");
             monbtndate.addEventListener("click", function () { let machaine=afficherDate();

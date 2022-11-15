@@ -4,6 +4,7 @@ html {
 
 body {
    font-size: 1.6em;
+   width: 25%;
 }
 
 #sendDate{
@@ -12,12 +13,11 @@ body {
     -webkit-border-radius:0.8em;
     -ms-border-radius:0.8em;
     -o-border-radius:0.8em; 
-    width:40%;
     background-color:rgb(251, 242, 231);
 }
 
 input[type="text"] {
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 
 label {
