@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Inscription Astro : register</title>
+        <link rel="stylesheet" href="./register.css">
+        <script src="register.js" defer></script>
+    </head>
+
+    <body>
+
+        <h1>Inscription Astro</h1>
+
+        <h2>Formulaire d'Inscription</h2>
+
+        <p>Remplissez le formulaire si-dessous afin de créer votre comptre Astro</p>
+
+        <form action="Accueil.html" method="POST" enctype="multipart/form-data" id="formRegister">
+
+            <input type="text" name="nomUtilisateur" id="nomUtilisateur" maxlength="50" size="15" placeholder="Entez votre nom"/>
+
+            <input type="text" name="prenomUtilisateur" id="prenomUtilisateur" maxlength="50" size="15"  placeholder="Entrez votre prénom"/>
+
+            <br> <br>
+
+            <select id="jour" class="madate"></select>
+
+            <select id="mois" class="madate"></select>
+
+            <select id="annee" class="madate"></select>
+
+            <br> <br>
+
+            <input readonly="true" type="text" name="pseudo" id="pseudo" maxlength="50"  placeholder="Votre pseudo s'affichera ici"/>
+
+            <br> <br>
+            
+            <div id="error">
+
+            <br> <br>
+ 
+            <input type="button" value="Valider" name="btnValid" id="btnValid" disabled="true"/>
+
+            <input type="reset" value="Rénitialiser" name="btnReset" id="btnReset"/>
+            
+        </form>
+
+    </body>
+
+</html>
