@@ -27,7 +27,7 @@ function afficherMois()
     monOption.value= "";
     document.querySelector("#mois").appendChild(monOption);
 
-    for (let i = 0; i < tabMois.length; i++)
+    for (let i = 0; i < tabMois.length; i++) 
     {
         monOption= document.createElement("option");
         monOption.innerText= tabMois[i];
@@ -131,4 +131,3 @@ document.getElementById("btnValid").addEventListener("click", function()
     createCookie("pseudoUser", document.querySelector("#pseudo").value);
     document.forms[0].submit();
 })
-
