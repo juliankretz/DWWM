@@ -69,9 +69,13 @@ monXHR.onload= function()
     }
 } 
 
+// Chercher le joueur avec le plus d'attaque
+
 function DisplayHighestAtk(data)
 {
     let maxAtk = data[0].attack;
+
+    let tabRes = [];
 
     let indice = 0;
     
@@ -83,38 +87,56 @@ function DisplayHighestAtk(data)
             indice = i;
         } 
     }
-    return indice;
+    tabRes.push(indice, maxAtk);
+    return tabRes;
 }
+
+// Chercher le joueur avec le moins d'attaque
 
 function DisplayLowestAtk(data)
 {
-    let minAtk = data[0].attack
+    let minAtk = data[0].attack;
+
+    let tabRes = [];
 
     let indice = 0;
-
-    for (let i = 0; i < data.lenght; i++)
+    
+    for (let i = 0; i < data.length; i++)
     {
-        if (data[i].attack < minAtk)
+        if (data[i].armor < minAtk)
         {
-            minAtk = data[i].attack
+            minAtk = data[i].attack;
             indice = i;
         }
     }
-    return indice;
+    tabRes.push(indice, minAtk);
+    return tabRes;
 }
+
+// Afficher les joueurs lorsque l'on clique sur le bouton "Attack" 
 
 document.getElementById("btnAtk").addEventListener("click", function()
 {
-    let indiceMax = DisplayHighestAtk(tabData);
-    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest attack : " + tabData[indiceMax].attack + "</p>"
+    let tabAtkMax = DisplayHighestAtk(tabData);
+    console.log(tabAtkMax[0]);
+    console.log(tabAtkMax[1]);
+    let indiceMax = tabAtkMax[0];
+    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest attack : " + tabAtkMax[1] + "</p>"
 
-    let indiceMin = DisplayLowestAtk(tabData);
-    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest attack : " + tabData[indiceMin].attack + "</p>"
+    let tabAtkMin = DisplayLowestAtk(tabData);
+    console.log(tabAtkMin[0]);
+    console.log(tabAtkMin[1]);
+    let indiceMin = tabAtkMin[0];
+    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest attack : " + tabAtkMin[1] + "</p>"
 })
+
+// Chercher le joueur avec le plus d'armure
 
 function DisplayHighestArmor(data)
 {
     let maxArmor = data[0].armor;
+
+    let tabRes = [];
 
     let indice = 0;
     
@@ -126,12 +148,17 @@ function DisplayHighestArmor(data)
             indice = i;
         } 
     }
-    return indice;
+    tabRes.push(indice, maxArmor);
+    return tabRes;
 }
+
+// Chercher le joueur avec le moins d'armure
 
 function DisplayLowestArmor(data)
 {
     let minArmor = data[0].armor;
+
+    let tabRes = [];
 
     let indice = 0;
     
@@ -143,14 +170,84 @@ function DisplayLowestArmor(data)
             indice = i;
         }
     }
-    return indice;
+    tabRes.push(indice, minArmor);
+    return tabRes;
 }
+
+// Afficher les joueurs lorsque l'on clique sur le bouton "Armor"
 
 document.getElementById("btnArmor").addEventListener("click", function()
 {
-    let indiceMax = DisplayHighestAtk(tabData);
-    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest armor : " + tabData[indiceMax].armor + "</p>"
+    let tabArmorMax = DisplayHighestArmor(tabData);
+    console.log(tabArmorMax[0]);
+    console.log(tabArmorMax[1]);
+    let indiceMax = tabArmorMax[0];
+    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest armor : " + tabArmorMax[1] + "</p>"
+
+    let tabArmorMin = DisplayLowestArmor(tabData);
+    console.log(tabArmorMin[0]);
+    console.log(tabArmorMin[1]);
+    let indiceMin = tabArmorMin[0];
+    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest armor : " + tabArmorMin[1] + "</p>"
+})
+
+// Chercher le joueur avec le plus de dégats
+
+function DisplayHighestDmg(data)
+{
+    let maxDmg = data[0].damage;
+
+    let tabRes = [];
+
+    let indice = 0;
     
-    let indiceMin = DisplayLowestAtk(tabData);
-    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest armor : " + tabData[indiceMin].attack + "</p>"
+    for (let i = 0; i < data.length; i++)
+    {
+        if (data[i].damage > maxDmg)
+        {
+            maxDmg = data[i].damage;
+            indice = i;
+        } 
+    }
+    tabRes.push(indice, maxDmg);
+    return tabRes;
+}
+
+// Chercher le joueur avec le moins de dégats
+
+function DisplayLowestDmg(data)
+{
+    let minDmg = data[0].damage;
+
+    let tabRes = [];
+
+    let indice = 0;
+    
+    for (let i = 0; i < data.length; i++)
+    {
+        if (data[i].damage < minDmg)
+        {
+            minDmg = data[i].damage;
+            indice = i;
+        }
+    }
+    tabRes.push(indice, minDmg);
+    return tabRes;
+}
+
+// Afficher les joueurs lorsque l'on clique sur le bouton "Damage"
+
+document.getElementById("btnDmg").addEventListener("click", function()
+{
+    let tabDmgMax = DisplayHighestDmg(tabData);
+    console.log(tabDmgMax[0]);
+    console.log(tabDmgMax[1]);
+    let indiceMax = tabDmgMax[0];
+    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest damage : " + tabDmgMax[1] + "</p>"
+    
+    let tabDmgMin = DisplayLowestDmg(tabData);
+    console.log(tabDmgMin[0]);
+    console.log(tabDmgMin[1]);
+    let indiceMin = tabDmgMin[0];
+    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest damage : " + tabDmgMin[1] + "</p>"
 })
