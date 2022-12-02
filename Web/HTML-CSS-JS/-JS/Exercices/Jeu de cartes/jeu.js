@@ -182,13 +182,16 @@ document.getElementById("btnArmor").addEventListener("click", function()
     console.log(tabArmorMax[0]);
     console.log(tabArmorMax[1]);
     let indiceMax = tabArmorMax[0];
-    document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest armor : " + tabArmorMax[1] + "</p>"
 
-    let tabArmorMin = DisplayLowestArmor(tabData);
-    console.log(tabArmorMin[0]);
-    console.log(tabArmorMin[1]);
-    let indiceMin = tabArmorMin[0];
-    document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest armor : " + tabArmorMin[1] + "</p>"
+    document.querySelector(".playerName").textContent = tabData[indiceMax].name;
+
+    // document.getElementById("summarizeHigh").innerHTML = "<p>" + tabData[indiceMax].name + " has the highest armor : " + tabArmorMax[1] + "</p>"
+
+    // let tabArmorMin = DisplayLowestArmor(tabData);
+    // console.log(tabArmorMin[0]);
+    // console.log(tabArmorMin[1]);
+    // let indiceMin = tabArmorMin[0];
+    // document.getElementById("summarizeLow").innerHTML = "<p>" + tabData[indiceMin].name + " has the lowest armor : " + tabArmorMin[1] + "</p>"
 })
 
 // Chercher le joueur avec le plus de dégats
