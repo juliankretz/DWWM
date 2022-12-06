@@ -14,35 +14,72 @@
 
     <body>
         
-        <table id="perso" class="table  table-striped"></table>
+        
 
         <div id="btns">
 
-            <button type="button" id="btnAtk" class="btn btn-primary">Attack</button>
+            <button type="button" id="ricko" class="btn btn-primary">Ricko</button>
+            <button type="button" id="popo" class="btn btn-primary">Popo</button>
+            <button type="button" id="loulou" class="btn btn-primary">Loulou</button>
+            <button type="button" id="daiko" class="btn btn-primary">Daiko</button>
+            <button type="button" id="jj" class="btn btn-primary">JJ</button>
+            <button type="button" id="ines" class="btn btn-primary">Inès</button>
+            <button type="button" id="stan" class="btn btn-primary">Stan</button>
+            <button type="button" id="robert" class="btn btn-primary">Robert</button>
+            <button type="button" id="nikita" class="btn btn-primary">Nikita</button>
+            <button type="button" id="neo" class="btn btn-primary">Néo</button>
+            <button type="button" id="pi" class="btn btn-primary">Pi</button>
+            <button type="button" id="qi" class="btn btn-primary">Qi</button>
+            <button type="button" id="karl" class="btn btn-primary">Karl</button>
+            <button type="button" id="calors" class="btn btn-primary">Carlos</button>
+            <button type="button" id="idril" class="btn btn-primary">Idril</button>
+            <button type="button" id="valar" class="btn btn-primary">Valar</button>
+            <button type="button" id="rosa" class="btn btn-primary">Rosa</button>
+            <button type="button" id="matt" class="btn btn-primary">Matt</button>
+            <button type="button" id="vaina" class="btn btn-primary">Vaïna</button>
+            <button type="button" id="mario" class="btn btn-primary">Mario</button>
 
-            <button type="button" id="btnArmor" class="btn btn-primary">Armor</button>
-
-            <button type="button" id="btnDmg" class="btn btn-primary">Damage</button>
-            
         </div>
 
-         <div id="summarizeHigh"></div>    
-
-        <div id="summarizeLow"></div> 
+        <br>
 
         <div id="statCard">
 
-            <div id="divTitle">
-                <h2 class="playerName"></h2>
-                <p class="P/W"></p>
+            <div id="divNbr">
+                <h1 class="playerNbr">0</h1>
             </div>
+            
+            <div id="divTitle">
+                <h2 class="playerName">Name</h2>
+                <p class="PlayWin">Played: 0 | Won: 0 </p>
+            </div>
+            
             <div id="divImg"><img src="./armure.png" alt="imgArmor"></div>
-            <div id="divFoot"></div>
-            <div id="divAtk" class="divCardStat">ATTACK</div>
-            <div id="divArmor" class="divCardStat">ARMOR</div>
-            <div id="divDmg" class="divCardStat">DAMAGE</div>
 
+            <div id="divAtk" class="divCardStat">ATTACK
+                <div id="statAtk">0</div>
+            </div>
+
+            <div id="divArmor" class="divCardStat">ARMOR
+                <div id="statArmor">0</div>
+            </div>
+
+            <div id="divDmg" class="divCardStat">DAMAGE
+                <div id="statDmg">0</div>
+            </div>
+
+
+            <div id="divFoot"></div>
         </div>
+
+        <br>
+
+        <button type="button" id="btnTab" class="btn btn-danger">Show all the stats</button>
+
+        <br> <br>
+        
+
+        <table id="perso" class="table table-striped"></table>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
