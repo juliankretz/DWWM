@@ -330,3 +330,7 @@ document.getElementById("daiko").addEventListener("click", function()
     document.querySelector("#statArmor").textContent = tabData[3].armor;
     document.querySelector("#statDmg").textContent = tabData[3].damage;
 })
+
+// JJ
+
+docu
