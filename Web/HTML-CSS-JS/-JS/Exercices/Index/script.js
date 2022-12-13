@@ -15,17 +15,18 @@ xhr.onload = function()
 
 xhr.send();
 */
+
 let data = [];
 fetch("zipcodes.json")
 .then(response => { return response.json() })
-.then(response => { genererListe(response); data = response; } )
-.catch(erreur => { console.error(erreur) })
+.then(response => { genererListe(response); data = response; })
+.catch(erreur =>  { console.error(erreur) })
 
 function genererListe(data) 
 {
     let myList = document.querySelector("#commune");
 
-    for (let i = 0; i < data.length; i++) 
+    for (let i = 0; i < data.length; i++)
     {
         let myOption = new Option();
         myOption.value = data[i].codePostal;
@@ -33,7 +34,6 @@ function genererListe(data)
         myList.appendChild(myOption);
     }
 }
-
 
 // try
 // {
@@ -48,8 +48,6 @@ function genererListe(data)
 
 const btn = document.getElementById("btn");
 const input = document.getElementById("listcom");
-
-
 
 btn.addEventListener("click", function()
 {
@@ -67,7 +65,6 @@ btn.addEventListener("click", function()
             {
                 tabCP.push(ville.codePostal);
             }
-        
         } 
         
         else
@@ -75,15 +72,12 @@ btn.addEventListener("click", function()
             if (valeurrAChercher === ville.codePostal)
             {
                 tabCP.push(ville.nomCommune);
-
             }
         }
-
     }
 
     for (let i = 0; i < tabCP.length; i++) 
     {
         summary.innerHTML += tabCP[i] + "<br>";
     }
-    
 })
