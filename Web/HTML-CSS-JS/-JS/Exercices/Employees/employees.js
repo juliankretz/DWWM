@@ -15,6 +15,7 @@
 let data = [];
 fetch("employees.json")
 .then(response => { return response.json() })
+.then( response=> { tableauEmployee(response) })
 .catch(erreur =>  { console.error(erreur) })
 
 console.log(data);
@@ -32,16 +33,18 @@ function createTitleCell(myValue, myRow)
     myRow.append(myTitleCell);
 }
 
-function tableauJour(_data) 
+function tableauEmployee(_data) 
 {
     let myTab = document.getElementById("tabList");
     let myTHead = myTab.createTHead();
     let titleRow = myTHead.insertRow();
 
-    for (const key in _data[0])
-    {
-        createTitleCell(key, titleRow);    
-    }
+    createTitleCell("EID", titleRow);
+    createTitleCell("Full Name", titleRow);
+    createTitleCell("Email", titleRow);
+    createTitleCell("Monthly Salary", titleRow);
+    createTitleCell("Year of birth", titleRow);
+    createTitleCell("Actions", titleRow);
 
     let myBody = myTab.createTBody();
     
@@ -49,20 +52,26 @@ function tableauJour(_data)
     {
         let myRow = myBody.insertRow();
         
-        for (var key in _data[i])
-        {
-            createCell(_data[i][key], myRow);
-        }
+        createCell(_data[i].id, myRow);
+        createCell(_data[i].employee_name, myRow);
+            
+        let tabEmail = _data[i]["employee_name"].split(" ");
+        let firstLetter = tabEmail[0].substring(0, 1);
+        let email = firstLetter + "." + tabEmail[1] + "@email.com";
+
+        createCell(email, myRow);
+
+        let makeSalary = _data[i].employee_salary / 12;
+        let monthlySalary = Math.round(makeSalary) + " €";
+
+        createCell(monthlySalary, myRow);
+
+        let maDate = new Date();
+        let currentYear = maDate.getFullYear();
+        let birthYear = currentYear - _data[i].employee_age;
+
+        createCell(birthYear, myRow);
+        myRow.innerHTML += '<td> <input type="button" id="btnBlu" class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed" class="btn btn-danger" value="Delete"></input> </td>';
+    
     }
-
-}
-
-function monthlySalary(data)
-{
-    let yearSalary = data[0].employee_salary
-}
-
-function createEmail(data)
-{
-    let fullName = data[0].employee_name
 }
