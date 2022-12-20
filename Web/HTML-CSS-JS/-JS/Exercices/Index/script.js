@@ -16,14 +16,15 @@ xhr.onload = function()
 xhr.send();
 */
 
-let data = [];
+let tabdata = [];
 fetch("zipcodes.json")
 .then(response => { return response.json() })
-.then(response => { genererListe(response); data = response; })
+.then(response => { genererListe(response); tabdata=response; })
 .catch(erreur =>  { console.error(erreur) })
 
 function genererListe(data) 
 {
+    
     let myList = document.querySelector("#commune");
 
     for (let i = 0; i < data.length; i++)
@@ -51,33 +52,51 @@ const input = document.getElementById("listcom");
 
 btn.addEventListener("click", function()
 {
-  //  console.log(input.value);
+    console.log(input.value);
     let valeurrAChercher = input.value;
     let summary = document.querySelector("#validSumm");
-    let tabCP = [];
-    for (let i = 0; i < data.length; i++) 
+   let tabCP=[];
+
+    if (isNaN(valeurrAChercher))
     {
-        let ville = data[i]
-    
-        if (isNaN(valeurrAChercher))
-        {    
-            if (valeurrAChercher === ville.nomCommune)
-            {
-                tabCP.push(ville.codePostal);
-            }
-        } 
-        
-        else
-        {
-            if (valeurrAChercher === ville.codePostal)
-            {
-                tabCP.push(ville.nomCommune);
-            }
-        }
+       tabCP = tabdata.find(item => item.nomCommune == valeurrAChercher);
+        console.log(tabCP);
+
     }
 
-    for (let i = 0; i < tabCP.length; i++) 
+    else
     {
-        summary.innerHTML += tabCP[i] + "<br>";
+       tabCP = tabdata.filter(item => item.codePostal == valeurrAChercher);
+        console.log(tabCP);
     }
+    for (let j = 0; j<tabCP.length; j++) {
+        console.log(tabCP[j].nomCommune); 
+        summary.innerHTML += tabCP[j].nomCommune + "<br>";
+    }
+    // for (let i = 0; i < data.length; i++) 
+    // {
+    //     let ville = data[i]
+    
+    //     if (isNaN(valeurrAChercher))
+    //     {    
+    //         if (valeurrAChercher === ville.nomCommune)
+    //         {
+    //             tabCP.push(ville.codePostal);
+    //         }
+    //     } 
+        
+    //     else
+    //     {
+    //         if (valeurrAChercher === ville.codePostal)
+    //         {
+    //             tabCP.push(ville.nomCommune);
+    //         }
+    //     }
+    // }
+     
+
+
+          
+   
+    
 })

@@ -154,3 +154,5 @@ function tableauEmployee(_data)
     
     }
 }
+
+document.getElementById("btnRed")
