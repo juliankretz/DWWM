@@ -16,13 +16,13 @@ let data = [];
 fetch("employees.json")
 .then(response => { return response.json() })
 .then(response => { tableauEmployee(response);
+
     document.getElementById("up").addEventListener("click", function()
     {
         let myData =  trierTab("up", response);
        
         console.log(myData);
         creerContenu(myData);
-        //tableauEmployee(myData);
     });
 
     document.getElementById("down").addEventListener("click", function()
@@ -31,7 +31,6 @@ fetch("employees.json")
        
         console.log(myData);
         creerContenu(myData);
-        //tableauEmployee(myData);
     });
 
 })
@@ -103,12 +102,12 @@ function creerContenu(_data)
 
         createCell(birthYear, myRow);
         myRow.innerHTML += '<td> <input type="button" id="btnBlu" class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed" class="btn btn-danger" value="Delete"></input> </td>';
-    
     }
 }
 
 function tableauEmployee(_data) 
 {
+    data = _data;
     let myTab = document.getElementById("tabList");
     let myTHead = myTab.createTHead();
     let titleRow = myTHead.insertRow();
@@ -150,9 +149,8 @@ function tableauEmployee(_data)
         let birthYear = currentYear - _data[i].employee_age;
 
         createCell(birthYear, myRow);
-        myRow.innerHTML += '<td> <input type="button" id="btnBlu" class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed" class="btn btn-danger" value="Delete"></input> </td>';
+        myRow.innerHTML += '<td> <input type="button" id="btnBlu' +i + '"class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed' +i + '"class="btn btn-danger" value="Delete"></input> </td>';
     
     }
 }
 
-document.getElementById("btnRed")

@@ -59,20 +59,31 @@ btn.addEventListener("click", function()
 
     if (isNaN(valeurrAChercher))
     {
-       tabCP = tabdata.find(item => item.nomCommune == valeurrAChercher);
+       tabCP = tabdata.filter(item => item.nomCommune == valeurrAChercher);
         console.log(tabCP);
 
+        summary.innerHTML = " ";
+
+        for (let j = 0; j<tabCP.length; j++) {
+            console.log(tabCP[j].codePostal); 
+            summary.innerHTML += tabCP[j].codePostal + "<br>";
+        }
     }
 
     else
     {
        tabCP = tabdata.filter(item => item.codePostal == valeurrAChercher);
         console.log(tabCP);
-    }
-    for (let j = 0; j<tabCP.length; j++) {
+        
+        summary.innerHTML = " ";
+
+        for (let j = 0; j<tabCP.length; j++) 
+        {
         console.log(tabCP[j].nomCommune); 
         summary.innerHTML += tabCP[j].nomCommune + "<br>";
+        }
     }
+    
     // for (let i = 0; i < data.length; i++) 
     // {
     //     let ville = data[i]
