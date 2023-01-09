@@ -17,6 +17,30 @@ fetch("employees.json")
 .then(response => { return response.json() })
 .then(response => { tableauEmployee(response);
 
+    console.log(data);
+  
+
+    for (let i = 0; i < data.length; i++)
+    {   
+     // console.log('<td> <input type="button" id="btnBlu' +i + '"class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed' +i + '"class="btn btn-danger" value="Delete"></input> </td>');
+         let mybutton= document.createElement("input");
+         mybutton.setAttribute("type","button" );
+         mybutton.setAttribute("id","btnRed"+i );
+         mybutton.value="Delete";
+         mybutton.setAttribute("class","btn btn-danger");
+         document.querySelector("#bodemp").rows[i].appendChild(mybutton);   
+             
+         document.querySelector("#btnRed"+i).addEventListener("click", function()
+         {
+             console.log("test");
+            let tabSuppr = data.filter(item => item.id != i+1);
+          console.log(tabSuppr);
+           
+         });
+
+    }
+
+   
     document.getElementById("up").addEventListener("click", function()
     {
         let myData =  trierTab("up", response);
@@ -70,7 +94,8 @@ function trierTab(direction, data)
 }
 
 function creerContenu(_data)
-{    console.log("test");
+{   
+    console.log("test");
     let myNode = document.getElementById("bodemp");
     document.getElementById("tabList").removeChild(myNode);
 
@@ -103,7 +128,7 @@ function creerContenu(_data)
 
         createCell(birthYear, myRow);
 
-        myRow.innerHTML += '<td> <input type="button" id="btnBlu' +i + '"class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed' +i + '"class="btn btn-danger" value="Delete"></input> </td>';
+        return i;
         
       
 
@@ -157,23 +182,11 @@ function tableauEmployee(_data)
 
         createCell(birthYear, myRow);
 
-        myRow.innerHTML += '<td> <input type="button" id="btnBlu' +i + '"class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed' +i + '"class="btn btn-danger" value="Delete"></input> </td>';
+       // myRow.innerHTML += '<td> <input type="button" id="btnBlu' +i + '"class="btn btn-primary" value="Duplicate"></input> <input type="button" id="btnRed' +i + '"class="btn btn-danger" value="Delete"></input> </td>';
         
-        let chaine="btnRed"+i;
+       // let chaine="btnRed"+i;
 
-        document.getElementById(chaine).addEventListener("click", function()
-        {
-            let tabSuppr = data.filter(item => item.id != i+1);
-             console.log(tabSuppr);
-            // document.getElementById("tabList").removeChild(myBody);
-            
-            while (tabBody.firstChild) 
-            {
-                tabBody.removeChild(tabBody.firstChild)    
-            }
-
-            tabBody(tabSuppr);
-        });
+        
  
     }
 
