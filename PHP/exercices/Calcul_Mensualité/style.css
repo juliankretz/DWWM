@@ -1,0 +1,23 @@
+fieldset
+{
+    width:40%;
+    border-radius:12px;
+    background-color: rgb(251, 242, 231);
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+}
+
+input
+{
+    margin-right: 2em;
+    text-align: left;
+}
+
+.part
+{
+
+}
+
+

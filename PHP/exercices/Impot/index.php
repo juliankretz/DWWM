@@ -63,7 +63,7 @@
             </form>   
 
             <?php
-            require("./models/compable.php");
+            require("./models/comptable.php");
             if (isset($_POST["validation"]))
             {
                 $monObj= new ComptablePublic($_POST["lenom"], $_POST["revenu"]);
