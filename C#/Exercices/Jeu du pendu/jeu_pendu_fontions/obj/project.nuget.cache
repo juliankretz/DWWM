@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NNL6A0ra/S7KYPcA81uFg75/8w75TPhfpkWNgGYlbTRKu+JvhXdP7hafsNR9n9wrZdE1sgbqdP7LieTgP/O+Ew==",
+  "dgSpecHash": "pKT5kOzGHTYu+eEgiDquOk359/7ULEAonRKYUTrPGA77WVgOnDiQiALR0ly1PUSfvFIysxzVBjuzNIznDrSZiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jkretz\\Documents\\GitHub\\DWWM\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JKretz\\OneDrive - CENTRE DE READAPTATION\\Documents\\GitHub\\DWWM\\C#\\Exercices\\Jeu du pendu\\jeu_pendu_fontions\\jeu_pendu_fontions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JKretz\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\JKretz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\JKretz\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\JKretz\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

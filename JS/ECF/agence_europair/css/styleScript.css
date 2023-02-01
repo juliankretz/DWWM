@@ -1,0 +1,40 @@
+#article
+{
+    background-color: rgba(154, 210, 230, 0.99);
+    width: 65%;
+    margin: 5%;
+    padding: 8px;
+}
+
+#articleTitre
+{
+    color: rgb(237, 91, 0);
+    align-items: center;
+}
+
+#articleImg
+{
+    width: 100%;
+}
+
+#articleBtn
+{
+    background-color: rgb(40, 120, 255);
+    color: white;
+    margin-left: 85%;
+}
+
+#divTxt
+{
+    width: 80%;
+    margin: 10px;
+    align-items: center;
+    size: large;
+    text-align: justify;
+    color: rgb(30, 110, 255);
+}
+
+#divFlex
+{
+    display: flex;
+}

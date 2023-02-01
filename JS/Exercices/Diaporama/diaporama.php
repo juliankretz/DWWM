@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="./js/diaporama.js" defer></script> -->
+    
     <title>Diaporama ASIE chargement ajax</title>
 </head>
 
@@ -43,15 +45,32 @@
         </div>
     </nav>
 
+    <form method="GET" action="traitement.php" enctype="text/plain">
+    <fieldset>
+        <legend>
+            Choix taille du Diaporama
+        </legend>
+        <label for="txtMin">Diapo min</label>
+        <input type="text" placeholder="N° diapo min" id="txtMin" name="txtMin"/>
+        <label for="txtMax">Diapo max</label>
+        <input type="text" placeholde="N° diapo max" id="txtMax" name="txtMax"/>
+        <input type="submit" value="Afficher le diaporama" id="btnValid" name="btnValid"/>
+
+    </fieldset>
+    </form>
+
+    <?php
+
+    ?>
+
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!-- <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>  -->
         </div>
         <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <!-- <div class="carousel-item active">
                 <img src="img/1.jpg" class="d-block w-100" alt="L'ile de Lombok vue depuis l'ile de Trzwangan (Iles Gili)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>L'ile de Lombok vue depuis l'ile de Trzwangan (Iles Gili)</h5>
@@ -63,10 +82,10 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Le volcan Agung, Bali</h5>
                 </div>
-            </div>
+            </div> -->
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
