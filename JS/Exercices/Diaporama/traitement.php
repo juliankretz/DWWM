@@ -133,9 +133,13 @@ if (!empty($_GET["txtMin"]))
 
 if (!empty($_GET["txtMax"]))
 {
-    $max = intval($_GET["txtMax"]) -1;
+    $max = intval($_GET["txtMax"]);
 }
 
 $laLength = $max - $min;
 
 $sousTabDiapo = array_slice($data, $min, $laLength);
+
+echo (json_encode($sousTabDiapo));
+
+// var_export($sousTabDiapo);

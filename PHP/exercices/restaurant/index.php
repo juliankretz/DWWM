@@ -11,50 +11,63 @@
     
 <?php
 
-    require "./models/connection.php";
-    $maconnection = Connection::getInstance();
-    $rq = "select * from restaurants";
-    $pdoStatement = $maconnection->prepare($rq);
-    $pdoStatement->execute();
+    require "./models/mytable.php";
 
-    function getFieldName($_pdoStatement):array
+    $myTable = new MyTable(Connection::getInstance(), "restaurants");
+
+    $tab = $myTable->afficherTable();
+    // var_export($tab);
+    $res = $myTable->updateTable(2,"ADRIATICO","6 route de Neuf'''' Brisach, 68000, Colmar, France",50.50,"Une  des  meilleurs  pizzéria  de  la  région  Service  très  agréable,  efficace  et  souriant  Salle  principale  un  peu bruyante mais cela donne un côté italien je recommande",70.4,"2020-07-16");
+    
+    if ($res == true)
     {
-        $tabName= Array();
-
-        for ($i=0; $i < $_pdoStatement->columnCount(); $i++)
-        {
-            $tabInfo = $_pdoStatement->getColumnMeta($i);
-            array_push($tabName, $tabInfo["name"]);
-        }
-        return $tabName;
+        echo("maj effectuée");
     }
+    
+    
+    // $maconnection = Connection::getInstance();
+    // $rq = "select * from restaurants";
+    // $pdoStatement = $maconnection->prepare($rq);
+    // $pdoStatement->execute();
 
-    $tabNames = getFieldName($pdoStatement);
+    // function getFieldName($_pdoStatement):array
+    // {
+    //     $tabName= Array();
 
-    $chaine = "<table class='table table-striped' id='tab'><thead>";
+    //     for ($i=0; $i < $_pdoStatement->columnCount(); $i++)
+    //     {
+    //         $tabInfo = $_pdoStatement->getColumnMeta($i);
+    //         array_push($tabName, $tabInfo["name"]);
+    //     }
+    //     return $tabName;
+    // }
 
-    for ($i=0; $i < count($tabNames); $i++)
-    {
-        $chaine .= "<th>".$tabNames[$i]."</th>";
-    }
+    // $tabNames = getFieldName($pdoStatement);
 
-    $chaine .= "</thead> <tbody>";
+    // $chaine = "<table class='table table-striped' id='tab'><thead>";
 
-    while( $ligne = $pdoStatement->fetch())
-    {
-        $chaine .= "<tr>";
+    // for ($i=0; $i < count($tabNames); $i++)
+    // {
+    //     $chaine .= "<th>".$tabNames[$i]."</th>";
+    // }
+
+    // $chaine .= "</thead> <tbody>";
+
+    // while( $ligne = $pdoStatement->fetch())
+    // {
+    //     $chaine .= "<tr>";
 
 
-        for ($i=0; $i < count($ligne); $i++)
-        {
-            $chaine .= "<td>".$ligne[$i]."</td>";
-        }
+    //     for ($i=0; $i < count($ligne); $i++)
+    //     {
+    //         $chaine .= "<td>".$ligne[$i]."</td>";
+    //     }
 
-        $chaine .= "</tr>";
-    }
+    //     $chaine .= "</tr>";
+    // }
 
-    $chaine.="</tbody> </table>"; 
-    echo $chaine;
+    // $chaine.="</tbody> </table>"; 
+    // echo $chaine;
 
 ?>
 
