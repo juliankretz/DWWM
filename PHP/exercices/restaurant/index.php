@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Guide duchemin</title>
+    <title>Restaurants</title>
 </head>
 <body>
     
@@ -15,14 +15,17 @@
 
     $myTable = new MyTable(Connection::getInstance(), "restaurants");
 
-    $tab = $myTable->afficherTable();
+    $maChaine = $myTable->afficherTable();
+
+    echo $maChaine;
+
     // var_export($tab);
-    $res = $myTable->updateTable(2,"ADRIATICO","6 route de Neuf'''' Brisach, 68000, Colmar, France",50.50,"Une  des  meilleurs  pizzéria  de  la  région  Service  très  agréable,  efficace  et  souriant  Salle  principale  un  peu bruyante mais cela donne un côté italien je recommande",70.4,"2020-07-16");
+    // $res = $myTable->updateTable(2,"ADRIATICO","6 route de Neuf'''' Brisach, 68000, Colmar, France",50.50,"Une  des  meilleurs  pizzéria  de  la  région  Service  très  agréable,  efficace  et  souriant  Salle  principale  un  peu bruyante mais cela donne un côté italien je recommande",70.4,"2020-07-16");
     
-    if ($res == true)
-    {
-        echo("maj effectuée");
-    }
+    // if ($res == true)
+    // {
+    //     echo("maj effectuée");
+    // }
     
     
     // $maconnection = Connection::getInstance();

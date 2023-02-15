@@ -1,0 +1,22 @@
+label
+{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+fieldset
+{
+    background-color: rgb(227, 226, 226);
+    border-radius: 20px;
+    padding: 30px;
+    width: 50%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1
+{
+    text-align: center;
+}
