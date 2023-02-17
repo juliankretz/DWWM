@@ -56,12 +56,12 @@ class MyTable
                 $chaine .= "<td>".$ligne[$i]."</td>";
             }
             $chaine .= "<td> <a href='./modifier.php?id=".$ligne[0]."' target='_blank'>Modifier</a> </td>";
-            $chaine .= "<td> <input type='button' class='btn btn-primary' value='Supprimer' id='btnSup".$ligne[0]."' name='btnDel".$ligne[0]."'/> </td>";
+            $chaine .= "<td> <input type='button' class='btn btn-danger' value='Supprimer' id='".$ligne[0]."' name='btnDel".$ligne[0]."'/> </td>";
             $chaine .= "</tr>";
             
         }
-        $chaine .= "</tbody>";
-        
+        $chaine .= "</tbody> </table> <form id='formSupp' action='".$_SERVER["PHP_SELF"]."' method='POST'> <input type='hidden' name='suppRow' id='suppRow' /> </form>";
+        $chaine .= "<input type='button' class ='btn btn-primary' id='btnAdd' name='btnAdd' value='Ajouter une ligne'/> <br>";
         return $chaine;
     }
 
@@ -79,25 +79,42 @@ class MyTable
     }
 
 
-    public function updateTable($_id, $_nom, $_adresse, $_prixMoyen, $_commentaire, $_note, $_date):bool
+    public function updateTable(int $_id, string $_nom, string $_adresse, float $_prixMoyen, string $_commentaire, float $_note, string $_date):bool
     {
        
 
 
+        $sql = "UPDATE ".$this->table." SET `nom`=:nom,`adresse`=:adresse,`prix_moyen`=:prix,`commentaire`=:commentaire,`note`=:note,`visite`=:visite WHERE `id`=:id";
 
+      //  echo $sql;
+        $majStatement = self::$connection->prepare($sql);
+        $majStatement->bindParam(":id", $_id, PDO::PARAM_INT);
+        $majStatement->bindParam(":nom", $_nom, PDO::PARAM_STR);
+        $majStatement->bindParam(":adresse", $_adresse, PDO::PARAM_STR);
+        $majStatement->bindParam(":prix", $_prixMoyen, PDO::PARAM_STR);
+        $majStatement->bindParam(":commentaire", $_commentaire, PDO::PARAM_STR);
+        $majStatement->bindParam(":note", $_note, PDO::PARAM_STR);
+        $majStatement->bindParam(":visite", $_date, PDO::PARAM_STR);
 
-        $res = self::$connection->exec(" UPDATE `restaurants` SET `nom`='$_nom',`adresse`='$_adresse',`prix_moyen`='$_prixMoyen',`commentaire`='$_commentaire',`note`='$_note',`visite`='$_date' WHERE `id`=$_id");
-        echo  "UPDATE `restaurants` SET `nom`='$_nom',`adresse`='$_adresse',`prix_moyen`='$_prixMoyen',`commentaire`='$_commentaire',`note`='$_note',`visite`='$_date' WHERE `id`=$_id";
-        // $majStatement = self::$connection->prepare($mySql);
-        // $majStatement->bindParam(":id", $_id, PDO::PARAM_INT);
-        // $majStatement->bindParam(":nom", $_nom, PDO::PARAM_STR);
-        // $majStatement->bindParam(":adresse", $_adresse, PDO::PARAM_STR);
-        // $majStatement->bindParam(":prix", $_prixMoyen, PDO::PARAM_STR);
-        // $majStatement->bindParam(":commentaire", $_commentaire, PDO::PARAM_STR);
-        // $majStatement->bindParam(":note", $_note, PDO::PARAM_INT);
-        // $majStatement->bindParam(":visite", $_date, PDO::PARAM_STR);
+        $res = $majStatement->execute();
         return $res;
     }
 
+    public function deleteRow(int $_id):bool
+    {
+        $sql = "DELETE FROM ".$this->table." WHERE id = ?";
+        $deleteStatement = self::$connection->prepare($sql);
+        $resu = $deleteStatement->execute([$_id]);
+        return $resu;   
+
+    }
+
+    function createRow(string $_nom, string $_adresse, float $_prix, string $_commentaire, float $_note, string $_date)
+    {
+        $sql = "INSERT INTO ".$this->table." VALUES (id, ?, ?, ?, ?, ?)";
+        $createStatement = self::$connection->prepare($sql);
+        $resCreate = $createStatement->execute( array($_nom, $_adresse, $_prix, $_commentaire, $_note, $_date));
+        return $resCreate;
+    }
 
 }

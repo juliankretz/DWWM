@@ -18,6 +18,15 @@
     $maChaine = $myTable->afficherTable();
 
     echo $maChaine;
+    
+    if (!empty($_POST["suppRow"]))
+    {
+        $boolRow = $myTable->deleteRow($_POST["suppRow"]);
+        if ($boolRow == 1)
+        {
+            echo "La ligne a été supprimée";
+        }
+    }
 
     // var_export($tab);
     // $res = $myTable->updateTable(2,"ADRIATICO","6 route de Neuf'''' Brisach, 68000, Colmar, France",50.50,"Une  des  meilleurs  pizzéria  de  la  région  Service  très  agréable,  efficace  et  souriant  Salle  principale  un  peu bruyante mais cela donne un côté italien je recommande",70.4,"2020-07-16");
@@ -76,6 +85,18 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+
+    let btnTab = document.querySelectorAll(".btn");
+    btnTab.forEach(item=>{ item.addEventListener("click", function()
+        {
+            document.getElementById("suppRow").value=item.id;
+            document.getElementById("formSupp").submit();
+        })
+    });
+
+
+</script>
 </body>
 
 
