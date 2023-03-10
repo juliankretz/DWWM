@@ -1,0 +1,13 @@
+fieldset
+{
+    background-color: rgb(227, 226, 226);
+    border-radius: 20px;
+    padding-bottom: 40px;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: larger;
+    
+}
